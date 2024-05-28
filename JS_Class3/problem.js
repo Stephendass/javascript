@@ -46,3 +46,5 @@ function calDcirOfCircle(arr) {
 let circumference = calDcirOfCircle(samArr1)
 console.log(circumference)
 
+//Reduce DRY(Dont Repeat Yourself)
+
