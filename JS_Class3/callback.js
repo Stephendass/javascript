@@ -4,6 +4,8 @@ function printName(name){
 
 printName('Stephen')
 
+
+//Eg1
 function printFname(firstName, cb){
     console.log(firstName)
     cb('Stephendass')
@@ -16,3 +18,20 @@ function printLname(lastName){
 printFname('JS', printLname)
 // printLname('Stephendass')
 //callback function
+
+
+//Eg2
+function printFirstName(firstName, cb1, cb2){
+    console.log(firstName)
+    cb1('JS')
+    cb2('35')
+}
+
+function printLastName(lastname){
+    console.log(lastname)
+}
+
+function printAge(age){
+    console.log(age)
+}
+printFirstName('Stephen', printLastName, printAge)
