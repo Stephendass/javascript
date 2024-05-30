@@ -48,3 +48,39 @@ console.log(circumference)
 
 //Reduce DRY(Dont Repeat Yourself)
 
+//Problem => Count the Number of Vowels
+
+var str = "Hello World"
+function main(str) {
+    var vowelsCounnt = 0;
+    var string = str.toString();
+    for (var i = 0; i <= string.length - 1; i++) {
+        if (string.charAt(i) == 'a' || string.charAt(i) == 'e' || string.charAt(i) == 'i' || string.charAt(i) == 'o' || string.charAt(i) == 'u' ||
+            string.charAt(i) == 'A' || string.charAt(i) == 'E' || string.charAt(i) == 'I' || string.charAt(i) == 'O' || string.charAt(i) == 'U') {
+            vowelsCounnt += 1;
+        }
+    }
+
+    return vowelsCounnt;
+}
+
+
+let result = main(str);
+console.log(result)
+
+
+//Problem => Find the Maximum Value in an Array
+
+let num = [1,4,2,7,5]
+function findMaxValue(arr) {
+    let maxNum = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > maxNum) {
+            maxNum = arr[i];
+        }
+    }
+    return maxNum;
+}
+
+let maxNumResult = findMaxValue(num);
+console.log(maxNumResult)
