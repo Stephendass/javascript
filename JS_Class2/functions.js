@@ -8,7 +8,7 @@ function addTwoNum(a, b){
 
 //how to call or invoke a function
 addTwoNum(1,2)
-addTwoNum('JS' , 'Stephendass')
+addTwoNum('JS' , ' Stephendass')
 
 // function with String
 
