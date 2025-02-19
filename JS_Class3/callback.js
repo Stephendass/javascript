@@ -35,3 +35,16 @@ function printAge(age){
     console.log(age)
 }
 printFirstName('Stephen', printLastName, printAge)
+
+function printName(firstName, lastName, age){
+    console.log(firstName)
+    lastName('Theo');
+    age('3');
+}
+function printLastName(lastName){
+    console.log(lastName)
+}
+function printAge(age){
+    console.log(age)
+}
+printName(Jhovin, fn, printAge);
