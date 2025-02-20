@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Q1.Fix the list by inserting the missing element using querySelectorAll and insertBefore -->
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+
+     <!-- Q2.1 Fix the mathematical problem using JS <br> -->
+     <p>2 + 2 = 22</p>
+    <script>
+        //Ans:1
+        //Selet the ul from the body
+        let ourList = document.querySelector('ul')
+        console.log(ourList)
+
+        let allItems =ourList.querySelectorAll('li')
+
+        let indexThatHas4 = allItems[3]
+        let elementFour = document.createElement('li')
+        
+        elementFour.innerHTML = '4'
+        
+        ourList.insertBefore(elementFour, indexThatHas4)
+
+        //Ans:2
+        let sum =document.querySelector('p')
+        sum.innerText = '2 + 2 = 4'
+
+    </script>
+</body>
+</html>
